@@ -247,7 +247,7 @@ func (e *encodeState) marshal(v interface{}) (err error) {
 		}
 	}()
 	e.reflectValue(reflect.ValueOf(v))
-	return nil
+	return
 }
 
 func (e *encodeState) error(err error) {
